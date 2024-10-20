@@ -14,7 +14,7 @@ const Header = () => {
         </>
     )
     return (
-        <header>
+        <header className='fixed top-0 z-50 w-full'>
             <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -34,20 +34,27 @@ const Header = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow uppercase">
                             {navlinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="flex items-end gap-1"> 
+                        <span className='uppercase font-spline text-3xl logo'>  shrabon </span>
+                        <div class="flex justify-center items-center">
+                            <div class="relative inline-flex">
+                                <div class="w-3 h-3 bg-[#c7d300] rounded-full"></div>
+                                <div class="w-3 h-3 bg-[#c7d300] rounded-full absolute top-0 left-0 animate-ping"></div>
+                                <div class="w-3 h-3 bg-[#c7d300] rounded-full absolute top-0 left-0 animate-pulse"></div>
+                            </div>
+                        </div>
+                          </a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                <div className="navbar-end hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1 uppercase">
                         {navlinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div>
+             
             </div>
         </header>
     );
