@@ -26,6 +26,7 @@ header .active {
 
 .home-banner {
 	background-image: url("/src/assets/Images/banner_bg.jpg");
+	background-attachment: fixed;
 }
 .banner-img::before {
 	content: "";

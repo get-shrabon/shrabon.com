@@ -6,13 +6,15 @@ export default {
 			fontFamily: {
 				spline: "'Spline Sans', sans-serif",
 			},
-			textColors: {
+			textColor: {
 				primary: "#c7d300",
 				secondary: "rgba(177, 177, 177, 1)",
 			},
+			backgroundColor: {
+				accent: "#c7d300",
+				secondary: "#15160e",
+			},
 		},
 	},
-
 	plugins: [require("daisyui")],
 };
-
