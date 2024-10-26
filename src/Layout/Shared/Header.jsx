@@ -2,6 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+
+    window.onscroll = () => {
+        const header = document.querySelector('header');
+        const scrollY = window.scrollY;
+        if (scrollY > 0) {
+            header.classList.add('bg-secondary', scrollY > 500);
+        } else {
+            header.classList.remove('bg-secondary', scrollY > 500);
+        }
+    }
+
     // Navlinks
     const navlinks = (
         <>
@@ -14,9 +25,19 @@ const Header = () => {
         </>
     )
     return (
-        <header className='fixed top-0 z-50 w-full'>
+        <header className='fixed top-0 z-50 w-full py-3 duration-500'>
             <div className="navbar container mx-auto">
-                <div className="navbar-start">
+                <a className="flex items-end gap-1">
+                    <span className='uppercase font-spline text-3xl logo'>  shrabon </span>
+                    <div class="flex justify-center items-center">
+                        <div class="relative inline-flex">
+                            <div class="w-3 h-3 bg-[#c7d300] rounded-full"></div>
+                            <div class="w-3 h-3 bg-[#c7d300] rounded-full absolute top-0 left-0 animate-ping"></div>
+                            <div class="w-3 h-3 bg-[#c7d300] rounded-full absolute top-0 left-0 animate-pulse"></div>
+                        </div>
+                    </div>
+                </a>
+                <div className="navbar-end">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg
@@ -38,23 +59,14 @@ const Header = () => {
                             {navlinks}
                         </ul>
                     </div>
-                    <a className="flex items-end gap-1"> 
-                        <span className='uppercase font-spline text-3xl logo'>  shrabon </span>
-                        <div class="flex justify-center items-center">
-                            <div class="relative inline-flex">
-                                <div class="w-3 h-3 bg-[#c7d300] rounded-full"></div>
-                                <div class="w-3 h-3 bg-[#c7d300] rounded-full absolute top-0 left-0 animate-ping"></div>
-                                <div class="w-3 h-3 bg-[#c7d300] rounded-full absolute top-0 left-0 animate-pulse"></div>
-                            </div>
-                        </div>
-                          </a>
+
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 uppercase text-white font-semibold">
                         {navlinks}
                     </ul>
                 </div>
-             
+
             </div>
         </header>
     );
