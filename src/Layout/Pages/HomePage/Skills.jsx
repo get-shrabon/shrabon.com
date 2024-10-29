@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from '../../Components/ProgressBar';
+import PortfolioSlider from './PortfolioSlider';
 
 const Skills = () => {
 
@@ -69,6 +70,8 @@ const Skills = () => {
                         <ProgressBar progress={90} />
                     </div>
                 </div>
+                {/* Portfolio Slider Here */}
+                <PortfolioSlider />
             </div>
         </section>
     );
