@@ -44,7 +44,7 @@ const Skills = () => {
                     <div className='col-span-2'>
                         <p className='text-secondary'>
                             Contributed to various web applications for seamless user experiences. Led projects to integrate advanced functionality
-                             and enhanced user interfaces. Managed a team of developers for smooth project execution.
+                            and enhanced user interfaces. Managed a team of developers for smooth project execution.
                         </p>
                     </div>
                     <div className="col-span-2">
@@ -61,7 +61,7 @@ const Skills = () => {
                     </div>
                     <div className='col-span-2'>
                         <p className='text-secondary'>
-                            Worked on landing pages, and responsive websites, and maintained high standards in design and functionality. 
+                            Worked on landing pages, and responsive websites, and maintained high standards in design and functionality.
                             Built custom WordPress themes and worked with multiple clients to achieve their desired website look and feel.
                         </p>
                     </div>
@@ -70,8 +70,22 @@ const Skills = () => {
                         <ProgressBar progress={90} />
                     </div>
                 </div>
-                {/* Portfolio Slider Here */}
-                <PortfolioSlider />
+                <div className='grid grid-cols-1 md:grid-cols-5 gap-20 items-center py-20'>
+                    <div className='col-span-3'>
+                        {/* Portfolio Slider Here */}
+                        <PortfolioSlider />
+                    </div>
+                    <div className='col-span-2'>
+                        <h5 className='uppercase text-primary font-bold text-[20px]'> gallery </h5>
+                        <h2 className='text-white text-[46px] 2xl:text-[50px] font-bold leading-tight mt-5 uppercase'> latests portfolio </h2>
+                        <p className='text-secondary mt-3'>
+                            Discover our latest design projects crafted with attention to detail and creativity.
+                            Each piece is tailored to meet unique client needs, ensuring satisfaction and excellence.
+                            Let our portfolio inspire your next project.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
     );
