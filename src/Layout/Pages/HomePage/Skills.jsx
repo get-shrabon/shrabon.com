@@ -1,6 +1,7 @@
 import React from 'react';
 import ProgressBar from '../../Components/ProgressBar';
 import PortfolioSlider from './PortfolioSlider';
+import TestomonialSlider from './TestomonialSlider';
 
 const Skills = () => {
 
@@ -70,21 +71,26 @@ const Skills = () => {
                         <ProgressBar progress={90} />
                     </div>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-5 gap-20 items-center py-20'>
-                    <div className='col-span-3'>
+                <div className='flex-col-reverse md:flex-row flex gap-4 md:gap-20 items-center py-20'>
+                    <div className='md:w-[60%] w-full'>
                         {/* Portfolio Slider Here */}
                         <PortfolioSlider />
                     </div>
-                    <div className='col-span-2'>
+                    <div className='md:w-[40%] w-full'>
                         <h5 className='uppercase text-primary font-bold text-[20px]'> gallery </h5>
-                        <h2 className='text-white text-[46px] 2xl:text-[50px] font-bold leading-tight mt-5 uppercase'> latests portfolio </h2>
-                        <p className='text-secondary mt-3'>
+                        <h2 className='text-white text-[46px] 2xl:text-[50px] font-bold 
+                        leading-tight mt-5 uppercase'> latests portfolio </h2>
+                        <p className='text-secondary mt-3 pb-0 md:pb-16'>
                             Discover our latest design projects crafted with attention to detail and creativity.
                             Each piece is tailored to meet unique client needs, ensuring satisfaction and excellence.
                             Let our portfolio inspire your next project.
                         </p>
                     </div>
                 </div>
+
+                {/* Testomoinal Here */}
+
+                <TestomonialSlider />
 
             </div>
         </section>

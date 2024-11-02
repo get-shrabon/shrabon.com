@@ -40,23 +40,6 @@ header .active {
     animation: rotate 30s linear infinite;
 }
 
-/* .portfolio-slider .swiper-button-next::after, .portfolio-slider .swiper-button-prev::after{
-	content: none !important;
-}
-.portfolio-slider .swiper-button-prev, .portfolio-slider .swiper-button-next{
-	width: 40px !important;
-	height: 40px !important;
-	background-color: #15160e !important;
-	z-index: 99999 !important;
-	top: -10px !important;
-}
-.portfolio-slider .swiper-button-prev{
-
-}
-.portfolio-slider .swiper-button-next{
-
-} */
-
 
 
 
@@ -78,6 +61,9 @@ header .active {
 @media screen and (max-width: 600px) {
 	.container{
 		padding: 0 20px !important;
+	}
+	.skill-container{
+		
 	}
 	
 }

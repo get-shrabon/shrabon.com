@@ -1,0 +1,32 @@
+[
+	{
+		"client_img": "https://static.vecteezy.com/system/resources/previews/024/354/252/non_2x/businessman-isolated-illustration-ai-generative-free-photo.jpg",
+		"name": "John Doe",
+		"position": "CEO, Tech Solutions",
+		"description": "Working with this team was a fantastic experience. They understood our needs perfectly and delivered beyond expectations. Highly recommend!"
+	},
+	{
+		"client_img": "https://img.freepik.com/free-photo/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space_23-2148767055.jpg",
+		"name": "Sarah Lee",
+		"position": "Marketing Director, Bright Ideas",
+		"description": "Their creativity and attention to detail were remarkable. The project was smooth, and they were professional at every step."
+	},
+	{
+		"client_img": "https://techcloudltd.com/wp-content/uploads/2024/06/male-professional-headshots-1024x638.webp",
+		"name": "Michael Brown",
+		"position": "Product Manager, Innovate Inc.",
+		"description": "An exceptional team that brought our vision to life. Communication was clear, and they were quick to respond to any requests we had."
+	},
+	{
+		"client_img": "https://static.vecteezy.com/system/resources/thumbnails/048/378/864/small_2x/a-young-happy-pretty-smiling-professional-business-woman-free-photo.jpg",
+		"name": "Jessica Wilson",
+		"position": "Owner, Wilson Boutique",
+		"description": "I’m impressed by their work ethic and expertise. The website they created has significantly boosted our online presence. Amazing job!"
+	},
+	{
+		"client_img": "https://png.pngtree.com/png-clipart/20231104/original/pngtree-happy-corporate-business-professional-one-man-clipart-white-background-png-image_13504468.png",
+		"name": "David Smith",
+		"position": "CTO, FutureTech Labs",
+		"description": "Their knowledge and dedication to quality are top-notch. They were a pleasure to work with and exceeded our expectations at every turn."
+	}
+]
